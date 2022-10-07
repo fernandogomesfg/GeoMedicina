@@ -2,17 +2,18 @@ let h2 = document.querySelector('h2')
 function success(pos) {
     console.log(pos.coords.latitude, pos.coords.longitude);
     h2.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
-    var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.5);
+    var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
     L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
         .bindPopup('Voce esta aqui')
         .openPopup();
-
+/*
     L.marker([-25.93033,32.58613]).addTo(map)
         .bindPopup('Hospital Geral de Mavalane')
         .openPopup();
+        */
 }
 
 function error(err) {
