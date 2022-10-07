@@ -1,7 +1,7 @@
-let h2 = document.querySelector('h2')
+let p = document.querySelector('p')
 function success(pos) {
     console.log(pos.coords.latitude, pos.coords.longitude);
-    h2.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+    p.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
     var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
