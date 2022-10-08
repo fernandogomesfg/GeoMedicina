@@ -9,12 +9,13 @@ function success(pos) {
     L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
         .bindPopup('Voce esta aqui')
         .openPopup();
-/*
-    L.marker([-25.93033,32.58613]).addTo(map)
-        .bindPopup('Hospital Geral de Mavalane')
-        .openPopup();
-        */
+    /*
+        L.marker([-25.93033,32.58613]).addTo(map)
+            .bindPopup('Hospital Geral de Mavalane')
+            .openPopup();
+            */
 }
+
 
 function error(err) {
     console.log(err)
@@ -24,3 +25,5 @@ var watchID = navigator.geolocation.watchPosition(success, error, {
     enableHighAccuracy: true,
     timeout: 5000
 });
+
+position_gps
