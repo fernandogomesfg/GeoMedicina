@@ -91,7 +91,7 @@ function success(pos) {
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
 
-    
+
 
 
     //Controlador de camadas
@@ -114,7 +114,7 @@ function success(pos) {
         "Hospital Militar": HospitaisMilitares
 
     };
-    L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
 
     //mostrar coordenadas do cursor no rodape
     map.on('mousemove', function (e) {
