@@ -59,38 +59,65 @@ function success(pos) {
     //funcao de camadas do mapa
     camadas()
 
-    //adiccao de pontos no mapa
-    var myIcon = L.icon({
-        iconUrl: 'assets/img/gps.png',
+    /*==============================================
+                    Icones
+    ================================================*/
+    //Nivel Primario
+    var primario = L.icon({
+        iconUrl: 'assets/img/NivelPrimario.png',
         iconSize: [40, 40],
     });
 
-    
+    //Nivel Secundario
+    var secundario = L.icon({
+        iconUrl: 'assets/img/NivelSecundario.png',
+        iconSize: [40, 40],
+    }); 
+
+    //Nivel Terciario 
+    var terciario = L.icon({
+        iconUrl: 'assets/img/NivelTerciario.png',
+        iconSize: [40, 40],
+    });
+
+    //Nivel Quaternario
+    var quaternario = L.icon({
+        iconUrl: 'assets/img/NivelQuaternario.png',
+        iconSize: [40, 40],
+    });
+
+    /*==============================================
+                    Nivel Secundario
+    ================================================*/
     //Hospitais gerais
-    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: myIcon }).bindPopup('Hospital Geral de Mavalane'),
-        HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon }).bindPopup('Hospital Geral da Machava'),
-        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: myIcon }).bindPopup('Hospital Geral Jose Macamo'),
-        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: myIcon }).bindPopup('Hospital Geral de Chamanculo'),
-        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: myIcon }).bindPopup('Hospital Geral da Polana Canico');
+    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: terciario }).bindPopup('Hospital Geral de Mavalane'),
+        HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: secundario }).bindPopup('Hospital Geral da Machava'),
+        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: primario }).bindPopup('Hospital Geral Jose Macamo'),
+        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: primario }).bindPopup('Hospital Geral de Chamanculo'),
+        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: primario }).bindPopup('Hospital Geral da Polana Canico');
     //Grupo de Hospitais Gerais
     var HospitaisGerais = L.layerGroup([HospitalGeralMavalane, HospitalGeralMachava, HospitalGeralJoseMacamo, HospitalGeralChamanculo, HospitalGeralPolanaCanico]);
 
 
-    //Nivel Quaternario: Hospitais Centrais, Hospitais Especializados, Hospital Militar
+    /*==============================================
+                    Nivel Quaternario
+        Centrais,  Especializados e Militar
+    ================================================*/
+    //: Hospitais Centrais, Hospitais Especializados, Hospital Militar
     //Hospitais Centrais
-    var HospitalCentralMaputo = L.marker([-25.96917736197402, 32.58871078491212], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
+    var HospitalCentralMaputo = L.marker([-25.96917736197402, 32.58871078491212], { icon: quaternario }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Centrais
     var HospitaisCentrais = L.layerGroup([HospitalCentralMaputo]);
 
 
     //Hospitais Especializados
-    var HospitalPsiquiatricoInfulene = L.marker([0, 0], { icon: myIcon }).bindPopup('Hospital Psiquiatrico de Infulene');
+    var HospitalPsiquiatricoInfulene = L.marker([0, 0], { icon: quaternario }).bindPopup('Hospital Psiquiatrico de Infulene');
     //Grupo de Hospitais Especializados
     var HospitaisEspecializados = L.layerGroup([HospitalPsiquiatricoInfulene]);
 
 
     //Hospitais Militares
-    var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
+    var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: quaternario }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Militares
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
