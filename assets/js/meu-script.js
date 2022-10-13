@@ -91,7 +91,7 @@ function success(pos) {
 
 
     //Hospital Militar
-    var HospitalMilitarMaputo = L.marker([], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
+    var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Militares
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
