@@ -10,7 +10,7 @@ O trabalho tem como objectivo desenvolver um mapa na web para fazer o mapeamento
 - Leaflet
 
 ## Funcionalidades
-- [ ] Obter a localização do usuário
+- [x] Obter a localização do usuário
 - [ ] Mostrar a Unidade Sanitária mais próxima do usuário
 - [ ] Mostrar o caminho mais curto da localização actual do usuário até a Unidade Sanitária
 - [ ] Mostrar os serviços de cada Unidade Sanitária
