@@ -75,14 +75,25 @@ function success(pos) {
         // shadowAnchor: [22, 94]
     });
     //Hospitais gerais
-    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613],  { icon: myIcon } ).bindPopup('Hospital Geral de Mavalane'),
-        HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral da Machava'),
-        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo'),
-        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: myIcon } ).bindPopup('Hospital Geral de Chamanculo'),
-
-        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: myIcon } ).bindPopup('Hospital Geral da Polana Canico');
+    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: myIcon }).bindPopup('Hospital Geral de Mavalane'),
+        HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon }).bindPopup('Hospital Geral da Machava'),
+        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: myIcon }).bindPopup('Hospital Geral Jose Macamo'),
+        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: myIcon }).bindPopup('Hospital Geral de Chamanculo'),
+        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: myIcon }).bindPopup('Hospital Geral da Polana Canico');
     //Grupo de Hospitais Gerais
     var HospitaisGerais = L.layerGroup([HospitalGeralMavalane, HospitalGeralMachava, HospitalGeralJoseMacamo, HospitalGeralChamanculo, HospitalGeralPolanaCanico]);
+
+
+    //Hospitais Centrais
+    var HospitalCentralMaputo = L.marker([-25.96917736197402, 32.58871078491212], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
+    //Grupo de Hospitais Centrais
+    var HospitaisCentrais = L.layerGroup([HospitalCentralMaputo]);
+
+
+    //Hospital Militar
+    var HospitalMilitarMaputo = L.marker([], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
+    //Grupo de Hospitais Militares
+    var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
 
 
@@ -101,17 +112,17 @@ function success(pos) {
         "Hospital Rural": HospitaisGerais,
         "Hospital Geral": HospitaisGerais,
         "Hospital Provincial": HospitaisGerais,
-        "Hospital Central": HospitaisGerais,
+        "Hospital Central": HospitaisCentrais,
         "Hospital Especializado": HospitaisGerais,
-        "Hospital Militar": HospitaisGerais,
+        "Hospital Militar": HospitaisMilitares
 
     };
-    L.control.layers(baseMaps, overlayMaps).addTo(map);
+    L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
 
     //mostrar coordenadas do cursor no rodape
     map.on('mousemove', function (e) {
         document.getElementsByClassName('coordinate')[0].innerHTML = 'Latitude: ' + e.latlng.lat + ' Longitude: ' + e.latlng.lng;
-        //console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+        console.log(e.latlng.lat + ', ' + e.latlng.lng)
     })
 
 
