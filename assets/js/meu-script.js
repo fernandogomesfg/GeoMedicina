@@ -1,20 +1,128 @@
 let p = document.querySelector('p')
+function camadas() {
+    //Camadas do mapa
+    //Google Satelite
+    googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+    })
+    //googleSat.addTo(map)
+
+    //Google Streat
+    googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+    })
+    //googleStreets.addTo(map)
+
+    //Google Hibrido
+    googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+    })
+    //googleHybrid.addTo(map)
+
+    //Google Terrain
+    googleTerrain = L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+    })
+    //googleTerrain.addTo(map)
+
+    //Default Map
+    defaultMap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'), {
+        maxZoom: 20
+    }
+    //defaultMap.addTo(map)
+}
+
+
 function success(pos) {
     console.log(pos.coords.latitude, pos.coords.longitude);
     p.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+
     var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+    //Icone da posicao inicial
+    var posicao = L.icon({
+        iconUrl: 'assets/img/red_marker.png',
+        iconSize: [40, 40],
+        // iconAnchor: [22, 94],
+        // popupAnchor: [-3, -76],
+        // shadowUrl: 'my-icon-shadow.png',
+        // shadowSize: [68, 95],
+        // shadowAnchor: [22, 94]
+    });
+
+    L.marker([pos.coords.latitude, pos.coords.longitude], { icon: posicao }).addTo(map)
         .bindPopup('Voce esta aqui')
         .openPopup();
-    /*
-        L.marker([-25.93033,32.58613]).addTo(map)
-            .bindPopup('Hospital Geral de Mavalane')
-            .openPopup();
-            */
+
+
+    //funcao de camadas do mapa
+    camadas()
+
+    //adiccao de pontos no mapa
+    var myIcon = L.icon({
+        iconUrl: 'assets/img/gps.png',
+        iconSize: [40, 40],
+        // iconAnchor: [22, 94],
+        // popupAnchor: [-3, -76],
+        // shadowUrl: 'my-icon-shadow.png',
+        // shadowSize: [68, 95],
+        // shadowAnchor: [22, 94]
+    });
+    //Hospitais gerais
+    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613],  { icon: myIcon } ).bindPopup('Hospital Geral de Mavalane'),
+        HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral da Machava'),
+        HospitalGeralJoseMacamo = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo'),
+        HospitalGeralChamanculo = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo'),
+        HospitalGeralPolanaCanico = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo');
+
+
+    //Grupo de Hospitais Gerais
+    var HospitaisGerais = L.layerGroup([HospitalGeralMavalane, HospitalGeralMachava, HospitalGeralJoseMacamo, HospitalGeralChamanculo, HospitalGeralPolanaCanico]);
+
+
+
+    //Controlador de camadas
+    var baseMaps = {
+        "Default": defaultMap,
+        "Google Streets": googleStreets,
+        "Google Satelite": googleSat,
+        "Google Hibrido": googleHybrid
+    };
+
+    var overlayMaps = {
+        "Centro de Saude": HospitaisGerais,
+        "Posto de Saude": HospitaisGerais,
+        "Hospital Distrital": HospitaisGerais,
+        "Hospital Rural": HospitaisGerais,
+        "Hospital Geral": HospitaisGerais,
+        "Hospital Provincial": HospitaisGerais,
+        "Hospital Central": HospitaisGerais,
+        "Hospital Especializado": HospitaisGerais,
+        "Hospital Militar": HospitaisGerais,
+
+    };
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+    //mostrar coordenadas do cursor no rodape
+    map.on('mousemove', function (e) {
+        document.getElementsByClassName('coordinate')[0].innerHTML = 'Latitude: ' + e.latlng.lat + ' Longitude: ' + e.latlng.lng;
+        console.log('lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng)
+    })
+
+
+
+
+
 }
+
+
+
 
 
 function error(err) {
@@ -26,4 +134,5 @@ var watchID = navigator.geolocation.watchPosition(success, error, {
     timeout: 5000
 });
 
-position_gps
+
+
