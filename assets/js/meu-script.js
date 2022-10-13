@@ -18,7 +18,7 @@ function camadas() {
     //Google Hibrido
     googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
         maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     })
     //googleHybrid.addTo(map)
 
@@ -68,11 +68,6 @@ function success(pos) {
     var myIcon = L.icon({
         iconUrl: 'assets/img/gps.png',
         iconSize: [40, 40],
-        // iconAnchor: [22, 94],
-        // popupAnchor: [-3, -76],
-        // shadowUrl: 'my-icon-shadow.png',
-        // shadowSize: [68, 95],
-        // shadowAnchor: [22, 94]
     });
     //Hospitais gerais
     var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: myIcon }).bindPopup('Hospital Geral de Mavalane'),
@@ -90,11 +85,13 @@ function success(pos) {
     var HospitaisCentrais = L.layerGroup([HospitalCentralMaputo]);
 
 
-    //Hospital Militar
+    //Hospitais Militares
     var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Militares
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
+
+    
 
 
     //Controlador de camadas
