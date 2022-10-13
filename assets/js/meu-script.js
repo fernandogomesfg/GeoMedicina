@@ -78,8 +78,8 @@ function success(pos) {
     var HospitalGeralMavalane = L.marker([-25.93033, 32.58613],  { icon: myIcon } ).bindPopup('Hospital Geral de Mavalane'),
         HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral da Machava'),
         HospitalGeralJoseMacamo = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo'),
-        HospitalGeralChamanculo = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo'),
-        HospitalGeralPolanaCanico = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral Jose Macamo');
+        HospitalGeralChamanculo = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral de Chamanculo'),
+        HospitalGeralPolanaCanico = L.marker([-25.91429, 32.53155], { icon: myIcon } ).bindPopup('Hospital Geral da Polana Canico');
 
 
     //Grupo de Hospitais Gerais
