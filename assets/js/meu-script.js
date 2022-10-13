@@ -49,11 +49,6 @@ function success(pos) {
     var posicao = L.icon({
         iconUrl: 'assets/img/red_marker.png',
         iconSize: [40, 40],
-        // iconAnchor: [22, 94],
-        // popupAnchor: [-3, -76],
-        // shadowUrl: 'my-icon-shadow.png',
-        // shadowSize: [68, 95],
-        // shadowAnchor: [22, 94]
     });
 
     L.marker([pos.coords.latitude, pos.coords.longitude], { icon: posicao }).addTo(map)
@@ -69,6 +64,8 @@ function success(pos) {
         iconUrl: 'assets/img/gps.png',
         iconSize: [40, 40],
     });
+
+    
     //Hospitais gerais
     var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: myIcon }).bindPopup('Hospital Geral de Mavalane'),
         HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: myIcon }).bindPopup('Hospital Geral da Machava'),
@@ -79,19 +76,23 @@ function success(pos) {
     var HospitaisGerais = L.layerGroup([HospitalGeralMavalane, HospitalGeralMachava, HospitalGeralJoseMacamo, HospitalGeralChamanculo, HospitalGeralPolanaCanico]);
 
 
+    //Nivel Quaternario: Hospitais Centrais, Hospitais Especializados, Hospital Militar
     //Hospitais Centrais
     var HospitalCentralMaputo = L.marker([-25.96917736197402, 32.58871078491212], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Centrais
     var HospitaisCentrais = L.layerGroup([HospitalCentralMaputo]);
 
 
+    //Hospitais Especializados
+    var HospitalPsiquiatricoInfulene = L.marker([0, 0], { icon: myIcon }).bindPopup('Hospital Psiquiatrico de Infulene');
+    //Grupo de Hospitais Especializados
+    var HospitaisEspecializados = L.layerGroup([HospitalPsiquiatricoInfulene]);
+
+
     //Hospitais Militares
     var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: myIcon }).bindPopup('Hospital Central de Maputo');
     //Grupo de Hospitais Militares
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
-
-
-
 
 
     //Controlador de camadas
@@ -110,8 +111,8 @@ function success(pos) {
         "Hospital Geral": HospitaisGerais,
         "Hospital Provincial": HospitaisGerais,
         "Hospital Central": HospitaisCentrais,
-        "Hospital Especializado": HospitaisGerais,
-        "Hospital Militar": HospitaisMilitares
+        "Hospital Especializado": HospitaisEspecializados,
+        "Hospital Militar": HospitaisMilitares,
 
     };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -123,12 +124,7 @@ function success(pos) {
     })
 
 
-
-
-
 }
-
-
 
 
 
