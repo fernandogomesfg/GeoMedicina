@@ -87,14 +87,56 @@ function success(pos) {
     });
 
     /*==============================================
+            Nivel Primario - Centro de Saude
+    ================================================*/
+    //Centro de Saude
+    var CentroSaudeChamanculo = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de Chamanculo'),
+        CentroSaudeN14 = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de N 14'),
+        CentroSaudeXipamanine = L.marker([-25.93832, 32.56572], { icon: primario }).bindPopup('Centro de Saude de Xipamanine'),
+        CentroSaudeAltoMae = L.marker([-25.96011, 32.57011], { icon: primario }).bindPopup('Centro de Saude do Alto-Mae'),
+        CentroSaudePorto = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude do Porto'),
+        CentroSaudeMaxaquene = L.marker([-25.9742, 32.58319], { icon: primario }).bindPopup('Centro de Saude de Maxaquene'),
+        CentroSaudeJoseMacamo = L.marker([-25, 324], { icon: primario }).bindPopup('Centro de Saude Jose Macamo'),
+        CentroSaudeInhagoia = L.marker([-25.91635, 32.55856], { icon: primario }).bindPopup('Centro de Saude de Inhagoia'),
+        CentroSaudeBagamoyo = L.marker([-25.89721, 32.57024], { icon: primario }).bindPopup('Centro de Saude de Bagamoyo'),
+        CentroSaudeZimpeto = L.marker([-25.83122, 32.57763], { icon: primario }).bindPopup('Centro de Saude de Zimpeto'),
+        CentroSaudeMagoanineTendas = L.marker([-25.84639, 32.59742], { icon: primario }).bindPopup('Centro de Saude de Magoanine - Tendas'),
+        CentroSaudeMagoanineMiniCentro = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        
+
+
+    //Grupo de Centros de Saude
+    var CentroSaude = L.layerGroup([CentroSaudeXipamanine, CentroSaudeAltoMae, CentroSaudePorto, CentroSaudeMaxaquene, CentroSaudeInhagoia, CentroSaudeBagamoyo, CentroSaudeZimpeto, CentroSaudeMagoanineTendas ])
+
+
+    /*==============================================
+            Nivel Primario - Postos de Saude
+    ================================================*/
+    //Postos de Saude
+    var CentroSaudeChamanculo = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de Chamanculo'),
+        CentroSaudeN14 = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de N 14')
+        
+        
+
+
+    //Grupo de Postos de Saude
+    var PostoSaude = L.layerGroup([])
+
+
+    /*==============================================
                     Nivel Secundario
     ================================================*/
     //Hospitais gerais
-    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: terciario }).bindPopup('Hospital Geral de Mavalane'),
+    var HospitalGeralMavalane = L.marker([-25.93033, 32.58613], { icon: secundario }).bindPopup('Hospital Geral de Mavalane'),
         HospitalGeralMachava = L.marker([-25.91429, 32.53155], { icon: secundario }).bindPopup('Hospital Geral da Machava'),
-        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: primario }).bindPopup('Hospital Geral Jose Macamo'),
-        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: primario }).bindPopup('Hospital Geral de Chamanculo'),
-        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: primario }).bindPopup('Hospital Geral da Polana Canico');
+        HospitalGeralJoseMacamo = L.marker([-25.947144, 32.543960], { icon: secundario }).bindPopup('Hospital Geral Jose Macamo'),
+        HospitalGeralChamanculo = L.marker([-25.951050, 32.555408], { icon: secundario }).bindPopup('Hospital Geral de Chamanculo'),
+        HospitalGeralPolanaCanico = L.marker([-25.935561, 32.611509], { icon: secundario }).bindPopup('Hospital Geral da Polana Canico');
     //Grupo de Hospitais Gerais
     var HospitaisGerais = L.layerGroup([HospitalGeralMavalane, HospitalGeralMachava, HospitalGeralJoseMacamo, HospitalGeralChamanculo, HospitalGeralPolanaCanico]);
 
@@ -117,7 +159,7 @@ function success(pos) {
 
 
     //Hospitais Militares
-    var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: quaternario }).bindPopup('Hospital Central de Maputo');
+    var HospitalMilitarMaputo = L.marker([-25.957234971186132, 32.59212255477906], { icon: quaternario }).bindPopup('Hospital Militar de Maputo');
     //Grupo de Hospitais Militares
     var HospitaisMilitares = L.layerGroup([HospitalMilitarMaputo]);
 
@@ -131,7 +173,7 @@ function success(pos) {
     };
 
     var overlayMaps = {
-        "Centro de Saude": HospitaisGerais,
+        "Centro de Saude": CentroSaude,
         "Posto de Saude": HospitaisGerais,
         "Hospital Distrital": HospitaisGerais,
         "Hospital Rural": HospitaisGerais,
