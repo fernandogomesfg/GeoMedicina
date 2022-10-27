@@ -101,17 +101,30 @@ function success(pos) {
         CentroSaudeBagamoyo = L.marker([-25.89721, 32.57024], { icon: primario }).bindPopup('Centro de Saude de Bagamoyo'),
         CentroSaudeZimpeto = L.marker([-25.83122, 32.57763], { icon: primario }).bindPopup('Centro de Saude de Zimpeto'),
         CentroSaudeMagoanineTendas = L.marker([-25.84639, 32.59742], { icon: primario }).bindPopup('Centro de Saude de Magoanine - Tendas'),
-        CentroSaudeMagoanineMiniCentro = L.marker([-25, 32], { icon: primario }).bindPopup('')
-        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
-        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
-        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
-        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
-        CentroSaudeMagoanine = L.marker([-25, 32], { icon: primario }).bindPopup('')
+        CentroSaudeMagoanineMiniCentro = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de Magoanine Mini-Centro'),
+        CentroSaudePolanaCimento = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude da Polana Cimento'),
+        CentroSaude1Maio = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude 1 de Maio'),
+        CentroSaudeCanico = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude Polana Canico'),
+        CentroSaudeMavalane = L.marker([-25, 32], { icon: primario }).bindPopup('Centro de Saude de Mavalane'),
+        CentroSaudeAlbazine = L.marker([-25.84229, 32.64126], { icon: primario }).bindPopup('Centro de Saude de Albazine'),
+        CentroSaude1Junho = L.marker([-25.91512, 32.60994], { icon: primario }).bindPopup('Centro de Saude 1 de Junho'),
+        CentroSaudeRomao = L.marker([-25.87214, 32.63013], { icon: primario }).bindPopup('Centro de Saude de Romao'),
+        CentroSaudePescadores = L.marker([-25.90576, 32.65618], { icon: primario }).bindPopup('Centro de Saude dos Pescadores'),
+        CentroSaudeHulene = L.marker([-25.9144, 32.59608], { icon: primario }).bindPopup('Centro de Saude de Hulene'),
+        CentroSaudeMalhaganlene = L.marker([-25.95094, 32.58225], { icon: primario }).bindPopup('Centro de Saude de Malhaganlene'),
+        CentroSaudeInhaca = L.marker([-26.00329, 32.92033], { icon: primario }).bindPopup('Centro de Saude de Inhaca'),
+        CentroSaudeCatembe = L.marker([-26.02314, 32.57864], { icon: primario }).bindPopup('Centro de Saude de Catembe'),
+        CentroSaudeBoquisso = L.marker([-25.73921, 32.53837], { icon: primario }).bindPopup('Centro de Saude de Boquisso'),
+        CentroSaudeHPMatola = L.marker([-25.96635, 32.44014], { icon: primario }).bindPopup('Centro de Saude HP da Matola'),
+        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
+        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
+        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
+        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de')
         
 
 
     //Grupo de Centros de Saude
-    var CentroSaude = L.layerGroup([CentroSaudeXipamanine, CentroSaudeAltoMae, CentroSaudePorto, CentroSaudeMaxaquene, CentroSaudeInhagoia, CentroSaudeBagamoyo, CentroSaudeZimpeto, CentroSaudeMagoanineTendas ])
+    var CentroSaude = L.layerGroup([CentroSaudeXipamanine, CentroSaudeAltoMae, CentroSaudePorto, CentroSaudeMaxaquene, CentroSaudeInhagoia, CentroSaudeBagamoyo, CentroSaudeZimpeto, CentroSaudeMagoanineTendas, CentroSaudeAlbazine, CentroSaude1Junho, CentroSaudeRomao, CentroSaudePescadores, CentroSaudeHulene, CentroSaudeMalhaganlene, CentroSaudeInhaca, CentroSaudeCatembe, CentroSaudeBoquisso, CentroSaudeHPMatola])
 
 
     /*==============================================
