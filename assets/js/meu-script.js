@@ -155,7 +155,7 @@ function success(pos) {
     ================================================*/
     //Postos de Saude
     var PostoSaudeMozal = L.marker([-25.9186685, 32.3946614], { icon: primario }).bindPopup('Posto de Saude da Mozal'),
-        PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
+        PostoSaudeInhagoiaA = L.marker([-25.916403361473428, 32.558535933494575], { icon: primario }).bindPopup('Posto de Inhagoia "A"'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
@@ -170,7 +170,7 @@ function success(pos) {
 
 
     //Grupo de Postos de Saude
-    var PostoSaude = L.layerGroup([PostoSaudeMozal])
+    var PostoSaude = L.layerGroup([PostoSaudeMozal, PostoSaudeInhagoiaA])
 
 
     /*==============================================
