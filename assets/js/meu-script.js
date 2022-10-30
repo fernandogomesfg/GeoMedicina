@@ -150,9 +150,9 @@ function success(pos) {
         CentroSaudeNovaVida = L.marker([-25.9635152,32.5712496], { icon: primario }).bindPopup('Centro de Saude Nova Vida'),
         CentroSaudePeermed = L.marker([-25.9696069,32.5707297], { icon: primario }).bindPopup('Centro de Saude Peermed'),
         CentroSaudeZonaVerde = L.marker([-25.8738161,32.558492], { icon: primario }).bindPopup('Centro de Saude da Zona Verde'),
-        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
-        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
-        CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
+        CentroSaudeClinicaMajaque = L.marker([-25.9018434,32.5335233], { icon: primario }).bindPopup('Centro de Saude Clinica Majaque'),
+        CentroSaudeMoyo = L.marker([-26.,32.], { icon: primario }).bindPopup('Centro de Saude Moyo'),
+        CentroSaudePrivadoVidaFeliz = L.marker([-25.908101772163427, 32.49135598540307], { icon: primario }).bindPopup('Centro de Saude Privado Vida Feliz'),
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
@@ -164,7 +164,7 @@ function success(pos) {
 
 
     //Grupo de Centros de Saude
-    var CentroSaude = L.layerGroup([CentroSaudeXipamanine, CentroSaudeAltoMae, CentroSaudePorto, CentroSaudeMaxaquene, CentroSaudeBagamoyo, CentroSaudeZimpeto, CentroSaudeMagoanineTendas, CentroSaudeAlbazine, CentroSaude1Junho, CentroSaudeRomao, CentroSaudePescadores, CentroSaudeHulene, CentroSaudeMalhaganlene, CentroSaudeInhaca, CentroSaudeCatembe, CentroSaudeBoquisso, CentroSaudeHPMatola, CentroSaudeMutsekua, CentroSaudeMarracuene, CentroSaudeEduardoMondlane, CentroSaudeMuhalaze, CentroSaudeManhica, CentroSaudeMagude, CentroSaudeMavalane, CentroSaudeMoamba, CentroSaudeMali, CentroSaudeMassacaII, CentroSaudeTsalala, CentroSaudeMassaca, CentroSaudePontaOuro, CentroSaudeMachubo, CentroSaudeNamaacha, CentroSaudeFomento, CentroSaudeMosaka, CentroSaudeMaluana, CentroSaudeMaragra, CentroSaudeCampoane, CentroSaudeMagoanineA, CentroSaudePRM, CentroSaudeCMC, CentroSaudeNovaVida, CentroSaudePeermed, CentroSaudeMagoanineMiniCentro, CentroSaudeCanico, CentroSaudePolanaCimento, CentroSaude1Maio, CentroSaudeZonaVerde])
+    var CentroSaude = L.layerGroup([CentroSaudeXipamanine, CentroSaudeAltoMae, CentroSaudePorto, CentroSaudeMaxaquene, CentroSaudeBagamoyo, CentroSaudeZimpeto, CentroSaudeMagoanineTendas, CentroSaudeAlbazine, CentroSaude1Junho, CentroSaudeRomao, CentroSaudePescadores, CentroSaudeHulene, CentroSaudeMalhaganlene, CentroSaudeInhaca, CentroSaudeCatembe, CentroSaudeBoquisso, CentroSaudeHPMatola, CentroSaudeMutsekua, CentroSaudeMarracuene, CentroSaudeEduardoMondlane, CentroSaudeMuhalaze, CentroSaudeManhica, CentroSaudeMagude, CentroSaudeMavalane, CentroSaudeMoamba, CentroSaudeMali, CentroSaudeMassacaII, CentroSaudeTsalala, CentroSaudeMassaca, CentroSaudePontaOuro, CentroSaudeMachubo, CentroSaudeNamaacha, CentroSaudeFomento, CentroSaudeMosaka, CentroSaudeMaluana, CentroSaudeMaragra, CentroSaudeCampoane, CentroSaudeMagoanineA, CentroSaudePRM, CentroSaudeCMC, CentroSaudeNovaVida, CentroSaudePeermed, CentroSaudeMagoanineMiniCentro, CentroSaudeCanico, CentroSaudePolanaCimento, CentroSaude1Maio, CentroSaudeZonaVerde, CentroSaudeClinicaMajaque, CentroSaudePrivadoVidaFeliz])
     //-25.909328591338603, 32.4935956299305 Maternidade da Machava
 
     /*==============================================
@@ -174,8 +174,8 @@ function success(pos) {
     var PostoSaudeMozal = L.marker([-25.9186685, 32.3946614], { icon: primario }).bindPopup('Posto de Saude da Mozal'),
         PostoSaudeInhagoiaA = L.marker([-25.916371999405182, 32.558552026748664], { icon: primario }).bindPopup('Posto de Inhagoia "A"'),
         PostoSaudeUnidadeA = L.marker([-25.9105428,32.5169807], { icon: primario }).bindPopup('Posto de Saude Unidade A'),
-        PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
-        PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
+        PostoSaudeZonaVerde = L.marker([-25.8859893,32.547625], { icon: primario }).bindPopup('Posto de Saude da Zona Verde'),
+        PostoSaudeAguaMaputo = L.marker([-26.0468779,32.3345435], { icon: primario }).bindPopup('Posto de Saude Agua de Maputo'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
@@ -187,7 +187,7 @@ function success(pos) {
 
 
     //Grupo de Postos de Saude
-    var PostoSaude = L.layerGroup([PostoSaudeMozal, PostoSaudeInhagoiaA, PostoSaudeUnidadeA])
+    var PostoSaude = L.layerGroup([PostoSaudeMozal, PostoSaudeInhagoiaA, PostoSaudeUnidadeA, PostoSaudeZonaVerde, PostoSaudeAguaMaputo])
 
 
     /*==============================================
