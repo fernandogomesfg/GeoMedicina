@@ -36,6 +36,9 @@ function camadas() {
     //defaultMap.addTo(map)
 }
 
+function hg(){
+    
+}
 
 function success(pos) {
     console.log(pos.coords.latitude, pos.coords.longitude);
@@ -43,7 +46,10 @@ function success(pos) {
 
     var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
 
     //Icone da posicao inicial
     var posicao = L.icon({
@@ -55,9 +61,12 @@ function success(pos) {
         .bindPopup('Voce esta aqui')
         .openPopup();
 
+        
+
 
     //funcao de camadas do mapa
     camadas()
+    
 
     /*==============================================
                     Icones
@@ -72,7 +81,7 @@ function success(pos) {
     var secundario = L.icon({
         iconUrl: 'assets/img/NivelSecundario.png',
         iconSize: [40, 40],
-    }); 
+    });
 
     //Nivel Terciario 
     var terciario = L.icon({
@@ -141,8 +150,8 @@ function success(pos) {
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de'),
         CentroSaude = L.marker([-25., 32.], { icon: primario }).bindPopup('Centro de Saude de')
-        
-      
+
+
 
 
     //Grupo de Centros de Saude
@@ -164,8 +173,8 @@ function success(pos) {
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude'),
         PostoSaude = L.marker([-25, 32], { icon: primario }).bindPopup('Posto de Saude')
-        
-        
+
+
 
 
     //Grupo de Postos de Saude
@@ -235,13 +244,17 @@ function success(pos) {
 
     };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
+    L.Control.geocoder().addTo(map);    //search de locais
+
+    
+
 
     //mostrar coordenadas do cursor no rodape
     map.on('mousemove', function (e) {
         document.getElementsByClassName('coordinate')[0].innerHTML = 'Latitude: ' + e.latlng.lat + ' Longitude: ' + e.latlng.lng;
         console.log(e.latlng.lat + ', ' + e.latlng.lng)
     })
-
+    
 
 }
 
