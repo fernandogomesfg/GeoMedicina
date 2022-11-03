@@ -1,0 +1,1190 @@
+var unid_sanitarias = {
+    "type": "FeatureCollection",
+    "name": "US",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 1,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Xipamanine",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.93832,
+                "Longitude (X)": 32.56572
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.56572,
+                    -25.93832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 2,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Alto-Mae",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.96011,
+                "Longitude (X)": 32.57011
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.57011,
+                    -25.96011
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 3,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude do Porto",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.977116,
+                "Longitude (X)": 32.5873
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5873,
+                    -25.977116
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 4,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Maxaquene",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.9742,
+                "Longitude (X)": 32.58319
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.58319,
+                    -25.9742
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 5,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Inhagoia",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.91635,
+                "Longitude (X)": 32.55856
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.55856,
+                    -25.91635
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 6,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Bagamoyo",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.89721,
+                "Longitude (X)": 32.57024
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.57024,
+                    -25.89721
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 7,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Zimpeto",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.83122,
+                "Longitude (X)": 32.57763
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.57763,
+                    -25.83122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 8,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Magoanine - Tendas",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.84639,
+                "Longitude (X)": 32.59742
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.59742,
+                    -25.84639
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 9,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Magoanine - Mini Centro",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.8549034,
+                "Longitude (X)": 32.5985053
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5985053,
+                    -25.8549034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 10,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da Polana Cimento",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.9629903,
+                "Longitude (X)": 32.5936552
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5936552,
+                    -25.9629903
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 11,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude 1 de Maio",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.94811097,
+                "Longitude (X)": 32.58969918
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.58969918,
+                    -25.94811097
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 12,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Polana Canico",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.9342732,
+                "Longitude (X)": 32.6041081
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.6041081,
+                    -25.9342732
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 13,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Mavalane",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.92763,
+                "Longitude (X)": 32.59466
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.59466,
+                    -25.92763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 14,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Albazine",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.84229,
+                "Longitude (X)": 32.64126
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.64126,
+                    -25.84229
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 15,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude 1 de Junho",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.91512,
+                "Longitude (X)": 32.60994
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.60994,
+                    -25.91512
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 16,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Romao",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.87214,
+                "Longitude (X)": 32.63013
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.63013,
+                    -25.87214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 17,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude dos Pescadores",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.90576,
+                "Longitude (X)": 32.65618
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.65618,
+                    -25.90576
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 18,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Hulene",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.9144,
+                "Longitude (X)": 32.59608
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.59608,
+                    -25.9144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 19,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Malhangalene",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.95094,
+                "Longitude (X)": 32.58225
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.58225,
+                    -25.95094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 20,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Inhaca",
+                "Localizacao": "Inhaca",
+                "Latitude (Y)": -26.00329,
+                "Longitude (X)": 32.92033
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.92033,
+                    -26.00329
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 21,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Catembe",
+                "Localizacao": "Katembe",
+                "Latitude (Y)": -26.02314,
+                "Longitude (X)": 32.57864
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.57864,
+                    -26.02314
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 22,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Boquisso",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.73921,
+                "Longitude (X)": 32.53837
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.53837,
+                    -25.73921
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 23,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude HP da Matola",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.96635,
+                "Longitude (X)": 32.44014
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.44014,
+                    -25.96635
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 24,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Maluana",
+                "Localizacao": "Manhi�a",
+                "Latitude (Y)": -25.49612335,
+                "Longitude (X)": 32.65233278
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.65233278,
+                    -25.49612335
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 26,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Mutsekua",
+                "Localizacao": "Katembe",
+                "Latitude (Y)": -26.011081,
+                "Longitude (X)": 32.567492
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.567492,
+                    -26.011081
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 27,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Marracuene",
+                "Localizacao": "Marracuene",
+                "Latitude (Y)": -25.7315676,
+                "Longitude (X)": 32.6709071
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.6709071,
+                    -25.7315676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 28,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Eduardo Mondlane",
+                "Localizacao": "Marracuene",
+                "Latitude (Y)": -25.6535565,
+                "Longitude (X)": 32.6721168
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.6721168,
+                    -25.6535565
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 29,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Mualaze",
+                "Localizacao": "Marracuene",
+                "Latitude (Y)": -25.7764769,
+                "Longitude (X)": 32.5183781
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5183781,
+                    -25.7764769
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 30,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da Manhi�a",
+                "Localizacao": "Manhi�a",
+                "Latitude (Y)": -25.40932248,
+                "Longitude (X)": 32.80767828
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.80767828,
+                    -25.40932248
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 31,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Magude",
+                "Localizacao": "Magude",
+                "Latitude (Y)": -25.02894,
+                "Longitude (X)": 32.64899
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.64899,
+                    -25.02894
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 32,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da Moamba",
+                "Localizacao": "Moamba",
+                "Latitude (Y)": -25.59874,
+                "Longitude (X)": 32.244964
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.244964,
+                    -25.59874
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 33,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Mali",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.761462,
+                "Longitude (X)": 32.568606
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.568606,
+                    -25.761462
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 34,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Massaca II",
+                "Localizacao": "Boane",
+                "Latitude (Y)": -26.064394,
+                "Longitude (X)": 32.286632
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.286632,
+                    -26.064394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 35,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Tsalala",
+                "Localizacao": "Tsalala",
+                "Latitude (Y)": -25.89486165,
+                "Longitude (X)": 32.46166527
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.46166527,
+                    -25.89486165
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 36,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Massaca",
+                "Localizacao": "Boane",
+                "Latitude (Y)": -26.06479,
+                "Longitude (X)": 32.286415
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.286415,
+                    -26.06479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 37,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da Ponta de Ouro",
+                "Localizacao": "Zitundo",
+                "Latitude (Y)": -26.837186,
+                "Longitude (X)": 32.884238
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.884238,
+                    -26.837186
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 38,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Machubo",
+                "Localizacao": "Machubo",
+                "Latitude (Y)": -25.564393,
+                "Longitude (X)": 32.799445
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.799445,
+                    -25.564393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 39,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Namaacha",
+                "Localizacao": "Namaacha",
+                "Latitude (Y)": -25.991039,
+                "Longitude (X)": 32.13282
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.13282,
+                    -25.991039
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 40,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude do Fomento",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.9343369,
+                "Longitude (X)": 32.4761886
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.4761886,
+                    -25.9343369
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 41,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de Maragra",
+                "Localizacao": "Manhi�a",
+                "Latitude (Y)": -25.45742363,
+                "Longitude (X)": 32.77265534
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.77265534,
+                    -25.45742363
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 42,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Campoane",
+                "Localizacao": "Boane",
+                "Latitude (Y)": -26.0402705,
+                "Longitude (X)": 32.3265883
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.3265883,
+                    -26.0402705
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 43,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da PRM",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.970671,
+                "Longitude (X)": 32.578015
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.578015,
+                    -25.970671
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 44,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude de CMC",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.8426904,
+                "Longitude (X)": 32.6238105
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.6238105,
+                    -25.8426904
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 45,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude da Zona Verde",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.8738161,
+                "Longitude (X)": 32.558492
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.558492,
+                    -25.8738161
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 46,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Mosaka",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.88433325,
+                "Longitude (X)": 32.62050033
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.62050033,
+                    -25.88433325
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 47,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Maluana",
+                "Localizacao": "Manhi�a",
+                "Latitude (Y)": -25.49612335,
+                "Longitude (X)": 32.65233278
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.65233278,
+                    -25.49612335
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 48,
+                "Nivel": "Primario",
+                "Categoria": "Centro de Saude",
+                "Nome da Unidade Sanitaria": "Centro de Saude Clinica Majaque",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.9018434,
+                "Longitude (X)": 32.5335233
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5335233,
+                    -25.9018434
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 49,
+                "Nivel": "Primario",
+                "Categoria": "Posto de Saude",
+                "Nome da Unidade Sanitaria": "Posto de Saude da Mozal",
+                "Localizacao": "Boane",
+                "Latitude (Y)": -25.9186685,
+                "Longitude (X)": 32.3946614
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.3946614,
+                    -25.9186685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 50,
+                "Nivel": "Primario",
+                "Categoria": "Posto de Saude",
+                "Nome da Unidade Sanitaria": "Posto de Saude de Inhagoia \"A\"",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.91640336,
+                "Longitude (X)": 32.55853593
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.55853593,
+                    -25.91640336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 51,
+                "Nivel": "Primario",
+                "Categoria": "Posto de Saude",
+                "Nome da Unidade Sanitaria": "Posto de Saude Unidade A",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.9105428,
+                "Longitude (X)": 32.5169807
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5169807,
+                    -25.9105428
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 52,
+                "Nivel": "Primario",
+                "Categoria": "Posto de Saude",
+                "Nome da Unidade Sanitaria": "Posto de Saude da Zona Verde",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.8859893,
+                "Longitude (X)": 32.547625
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.547625,
+                    -25.8859893
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 53,
+                "Nivel": "Primario",
+                "Categoria": "Posto de Saude",
+                "Nome da Unidade Sanitaria": "Posto de Saude Agua de Maputo",
+                "Localizacao": "Boane",
+                "Latitude (Y)": -26.0468779,
+                "Longitude (X)": 32.3345435
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.3345435,
+                    -26.0468779
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 54,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Distritais",
+                "Nome da Unidade Sanitaria": "Hospital Distrital de Manhica",
+                "Localizacao": "Manhica",
+                "Latitude (Y)": -25.40870816,
+                "Longitude (X)": 32.80657321
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.80657321,
+                    -25.40870816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 55,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Geral",
+                "Nome da Unidade Sanitaria": "Hospital Geral de Mavalane",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.93042,
+                "Longitude (X)": 32.58614
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.58614,
+                    -25.93042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 56,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Geral",
+                "Nome da Unidade Sanitaria": "Hospital Geral Jose Macamo",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.947144,
+                "Longitude (X)": 32.54396
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.54396,
+                    -25.947144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 57,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Geral",
+                "Nome da Unidade Sanitaria": "Hospital Geral de Chamanculo",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.95118961,
+                "Longitude (X)": 32.55535617
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.55535617,
+                    -25.95118961
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 58,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Geral",
+                "Nome da Unidade Sanitaria": "Hospital Geral da Polana Canico",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.935561,
+                "Longitude (X)": 32.611509
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.611509,
+                    -25.935561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 59,
+                "Nivel": "Secundario",
+                "Categoria": "Hospital Geral",
+                "Nome da Unidade Sanitaria": "Hospital Geral da Machava",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.91429,
+                "Longitude (X)": 32.53155
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.53155,
+                    -25.91429
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 60,
+                "Nivel": "Terciario",
+                "Categoria": "Hospital Provincial",
+                "Nome da Unidade Sanitaria": "Hospital Provincial da Matola",
+                "Localizacao": "Cidade da Matola",
+                "Latitude (Y)": -25.96696,
+                "Longitude (X)": 32.43861
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.43861,
+                    -25.96696
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 61,
+                "Nivel": "Quaternario",
+                "Categoria": "Hospital Central",
+                "Nome da Unidade Sanitaria": "Hospital Central de Maputo",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.9692,
+                "Longitude (X)": 32.58873
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.58873,
+                    -25.9692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 62,
+                "Nivel": "Quaternario",
+                "Categoria": "Hospital Especializado",
+                "Nome da Unidade Sanitaria": "Hospital Psiquiatrico de Infulene",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.8596128,
+                "Longitude (X)": 32.5666355
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5666355,
+                    -25.8596128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 63,
+                "Nivel": "Quaternario",
+                "Categoria": "Hospital Militar",
+                "Nome da Unidade Sanitaria": "Hospital Militar de Maputo",
+                "Localizacao": "Cidade de Maputo",
+                "Latitude (Y)": -25.95727,
+                "Longitude (X)": 32.59212
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.59212,
+                    -25.95727
+                ]
+            }
+        }
+    ]
+}
