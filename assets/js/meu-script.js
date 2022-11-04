@@ -36,15 +36,12 @@ function camadas() {
     //defaultMap.addTo(map)
 }
 
-function hg() {
-
-}
-
 function success(pos) {
-    console.log(pos.coords.latitude, pos.coords.longitude);
+    //console.log(pos.coords.latitude, pos.coords.longitude);
     p.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
 
-    var map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
+    var map;
+    map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3); 
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -58,11 +55,8 @@ function success(pos) {
     });
 
     L.marker([pos.coords.latitude, pos.coords.longitude], { icon: posicao }).addTo(map)
-        .bindPopup('Voce esta aqui')
+        .bindPopup('Você esta aqui')
         .openPopup();
-
-
-
 
     //funcao de camadas do mapa
     camadas()
@@ -105,12 +99,26 @@ function success(pos) {
     };
 
 
+    function onEachFeature(feature, unid_sanitarias) {
+        // does this feature have a property named popupContent?
+        if (feature.properties && feature.properties.Nivel) {
+            unid_sanitarias.bindPopup(feature.properties.Nivel);
+           
+        }
+    }
+
     L.control.layers(baseMaps).addTo(map);
     L.Control.geocoder().addTo(map);    //search de locais
-    L.geoJSON(unid_sanitarias).addTo(map)
-    L.geoJSON(distritos_Maputo).addTo(map)
-    L.geoJSON(distritosMaputoCity).addTo(map)
+    L.geoJSON(unid_sanitarias, { onEachFeature: onEachFeature }).addTo(map)
+    //L.geoJSON(distritos_Maputo).addTo(map)
+    //L.geoJSON(distritosMaputoCity).addTo(map)
 
+
+/*
+    L.geoJSON(geojsonFeature, {
+        onEachFeature: onEachFeature
+    }).addTo(map);
+*/
 
 
     //mostrar coordenadas do cursor no rodape
