@@ -41,7 +41,7 @@ function success(pos) {
     p.textContent = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
 
     var map;
-    map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3); 
+    map = L.map('map').setView([pos.coords.latitude, pos.coords.longitude], 16.3);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -98,12 +98,29 @@ function success(pos) {
         "Google Hibrido": googleHybrid
     };
 
-
     function onEachFeature(feature, unid_sanitarias) {
-        // does this feature have a property named popupContent?
-        if (feature.properties && feature.properties.Nivel) {
-            unid_sanitarias.bindPopup(feature.properties.Nivel);
-           
+        if (feature.properties && feature.properties.Nome) {
+            unid_sanitarias.bindPopup(
+                `
+                <table>
+                    <tr>
+                        <td ><b>Nome: </b></td>                  
+                        <td></b>${feature.properties.Nome} </br></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Categoria: </b></td> 
+                        <td></b>${feature.properties.Categoria}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Localizacao:</b>
+                        <td>${feature.properties.Localizacao}</td>
+                    </tr>
+                </table>
+                
+                `);
+
         }
     }
 
@@ -112,14 +129,6 @@ function success(pos) {
     L.geoJSON(unid_sanitarias, { onEachFeature: onEachFeature }).addTo(map)
     //L.geoJSON(distritos_Maputo).addTo(map)
     //L.geoJSON(distritosMaputoCity).addTo(map)
-
-
-/*
-    L.geoJSON(geojsonFeature, {
-        onEachFeature: onEachFeature
-    }).addTo(map);
-*/
-
 
     //mostrar coordenadas do cursor no rodape
     map.on('mousemove', function (e) {
@@ -130,8 +139,6 @@ function success(pos) {
 
 }
 
-
-
 function error(err) {
     console.log(err)
 }
@@ -140,6 +147,3 @@ var watchID = navigator.geolocation.watchPosition(success, error, {
     enableHighAccuracy: true,
     timeout: 5000
 });
-
-
-
