@@ -114,7 +114,7 @@ function success(pos) {
                     </tr>
                     
                     <tr>
-                        <td><b>Localizacao:</b>
+                        <td><b>Localização:</b>
                         <td>${feature.properties.Localizacao}</td>
                     </tr>
                 </table>
