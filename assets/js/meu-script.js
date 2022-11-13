@@ -125,7 +125,7 @@ function success(pos) {
     }
 
     L.control.layers(baseMaps).addTo(map);
-    L.Control.geocoder().addTo(map);    //search de locais
+    //L.Control.geocoder().addTo(map);    //search de locais
     L.geoJSON(unid_sanitarias, { onEachFeature: onEachFeature }).addTo(map)
     //L.geoJSON(distritos_Maputo).addTo(map)
     //L.geoJSON(distritosMaputoCity).addTo(map)
