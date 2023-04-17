@@ -43,7 +43,7 @@ O trabalho tem como objectivo desenvolver um mapa na web para fazer o mapeamento
 ## Participantes do projecto
 - [Fernando Gomes](https://github.com/fernandogomesfg/)
 - Jennifer Bié
-- Samuel Ouana
+- [Samuel Ouana](https://github.com/SamuelOuana/)
 
 ## Deploy
 ✅ [Netlify](https://hospitalmap.netlify.app/)
